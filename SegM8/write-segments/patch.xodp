@@ -1,0 +1,77 @@
+{
+  "description": "Allows displaying in the POS position an arbitrary character specified by the 8-bit TMPL template. The 0th bit of the pattern corresponds to the segment 'a' (upper horizontal), and the 7th bit — to the segment 'h' (point).",
+  "nodes": [
+    {
+      "description": "Displayed char position in daisy-chain.",
+      "id": "BJsF8_H-v",
+      "label": "POS",
+      "position": {
+        "units": "slots",
+        "x": 8,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "id": "ByxMijcbw",
+      "label": "DEV'",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 3
+      },
+      "type": "@/output-segm8-device"
+    },
+    {
+      "description": "Custom symbol bit template.",
+      "id": "S1NKLdrWv",
+      "label": "TMPL",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/input-byte"
+    },
+    {
+      "description": "Link to segm8 object.",
+      "id": "SJk58drWv",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 1
+      },
+      "type": "@/input-segm8-device"
+    },
+    {
+      "id": "rk2PLOr-D",
+      "label": "DO",
+      "position": {
+        "units": "slots",
+        "x": 10,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "id": "rkaHL_HWD",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "id": "ry-u8dBbD",
+      "label": "DONE",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    }
+  ]
+}

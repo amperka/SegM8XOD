@@ -1,0 +1,328 @@
+{
+  "comments": [
+    {
+      "content": "Draw \"8\"",
+      "id": "HyfnJ9cZw",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 2
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      }
+    },
+    {
+      "content": "The example alternately lights up the symbol '8' and a dot on one module. Hardware SPI is used.",
+      "id": "ryWwmtH-w",
+      "position": {
+        "units": "slots",
+        "x": 8,
+        "y": 7
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 6
+      }
+    },
+    {
+      "content": "Draw \".\"\n128 is 0b10000000",
+      "id": "rylA15qbv",
+      "position": {
+        "units": "slots",
+        "x": 11,
+        "y": 5
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 4
+      }
+    }
+  ],
+  "description": "The example alternately lights up the symbol '8' and a dot on one module. The example uses 1 SegM8 module. CS pin is connected to Arduino pin 8. Hardware SPI is used.",
+  "links": [
+    {
+      "id": "BJTnoi9ZP",
+      "input": {
+        "nodeId": "HJI3GFSWw",
+        "pinKey": "SyDvz_HZw"
+      },
+      "output": {
+        "nodeId": "SJCiftBWv",
+        "pinKey": "ByxMijcbw"
+      }
+    },
+    {
+      "id": "BkuTzFB-D",
+      "input": {
+        "nodeId": "ryVlfYH-w",
+        "pinKey": "ByU7LRuSPkW"
+      },
+      "output": {
+        "nodeId": "S1EaMYrWD",
+        "pinKey": "S1K8wUY9b"
+      }
+    },
+    {
+      "id": "ByLGzYHWP",
+      "input": {
+        "nodeId": "ByXMfFBWv",
+        "pinKey": "BJkYMOrbv"
+      },
+      "output": {
+        "nodeId": "Byxn-YSZP",
+        "pinKey": "Bk4gU0drwJ-"
+      }
+    },
+    {
+      "id": "HJtD38FbP",
+      "input": {
+        "nodeId": "Byxn-YSZP",
+        "pinKey": "H1mlUC_HDJZ"
+      },
+      "output": {
+        "nodeId": "H1Iw2Lt-P",
+        "pinKey": "S1K8wUY9b"
+      }
+    },
+    {
+      "id": "HkEknIYbP",
+      "input": {
+        "nodeId": "S1EaMYrWD",
+        "pinKey": "Hk-UvIK9b"
+      },
+      "output": {
+        "nodeId": "HJI3GFSWw",
+        "pinKey": "SkR9zuBWw"
+      }
+    },
+    {
+      "id": "HysYZYBZD",
+      "input": {
+        "nodeId": "H1PFbFBZw",
+        "pinKey": "ryzPmdrbD"
+      },
+      "output": {
+        "nodeId": "Hk1KbKHWv",
+        "pinKey": "SkOn-_SZv"
+      }
+    },
+    {
+      "id": "SJww2Itbv",
+      "input": {
+        "nodeId": "H1Iw2Lt-P",
+        "pinKey": "Hk-UvIK9b"
+      },
+      "output": {
+        "nodeId": "ByXMfFBWv",
+        "pinKey": "SkR9zuBWw"
+      }
+    },
+    {
+      "id": "SkBr7FH-P",
+      "input": {
+        "nodeId": "ryI0GYHbv",
+        "pinKey": "SkSuD6LMb"
+      },
+      "output": {
+        "nodeId": "SJCiftBWv",
+        "pinKey": "ry-u8dBbD"
+      }
+    },
+    {
+      "id": "Sy8ezKBbD",
+      "input": {
+        "nodeId": "H1PFbFBZw",
+        "pinKey": "SJbqmuSZw"
+      },
+      "output": {
+        "nodeId": "ryVlfYH-w",
+        "pinKey": "ByHmL0uHPk-"
+      }
+    },
+    {
+      "id": "SyHAZKr-P",
+      "input": {
+        "nodeId": "Byxn-YSZP",
+        "pinKey": "SkSuD6LMb"
+      },
+      "output": {
+        "nodeId": "H1PFbFBZw",
+        "pinKey": "Sk29QOS-w"
+      }
+    },
+    {
+      "id": "r1Eu3IYWv",
+      "input": {
+        "nodeId": "ryI0GYHbv",
+        "pinKey": "H1mlUC_HDJZ"
+      },
+      "output": {
+        "nodeId": "S1EaMYrWD",
+        "pinKey": "S1K8wUY9b"
+      }
+    },
+    {
+      "id": "rJLAiLFWv",
+      "input": {
+        "nodeId": "SJCiftBWv",
+        "pinKey": "rk2PLOr-D"
+      },
+      "output": {
+        "nodeId": "ByXMfFBWv",
+        "pinKey": "SkR9zuBWw"
+      }
+    },
+    {
+      "id": "rJtSXYS-P",
+      "input": {
+        "nodeId": "HJI3GFSWw",
+        "pinKey": "BJkYMOrbv"
+      },
+      "output": {
+        "nodeId": "ryI0GYHbv",
+        "pinKey": "Bk4gU0drwJ-"
+      }
+    },
+    {
+      "id": "rkW3iicbD",
+      "input": {
+        "nodeId": "SJCiftBWv",
+        "pinKey": "SJk58drWv"
+      },
+      "output": {
+        "nodeId": "ByXMfFBWv",
+        "pinKey": "rkdrci9Ww"
+      }
+    },
+    {
+      "id": "rylaiocZP",
+      "input": {
+        "nodeId": "ByXMfFBWv",
+        "pinKey": "SyDvz_HZw"
+      },
+      "output": {
+        "nodeId": "H1PFbFBZw",
+        "pinKey": "BJ-Oojqbw"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ByXMfFBWv",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 4
+      },
+      "type": "@/clear"
+    },
+    {
+      "boundLiterals": {
+        "Skre8ROSv1-": "1"
+      },
+      "id": "Byxn-YSZP",
+      "position": {
+        "units": "slots",
+        "x": 8,
+        "y": 3
+      },
+      "type": "xod/core/delay"
+    },
+    {
+      "id": "H1Iw2Lt-P",
+      "position": {
+        "units": "slots",
+        "x": 8,
+        "y": 4
+      },
+      "type": "xod/core/defer(pulse)"
+    },
+    {
+      "boundLiterals": {
+        "ByyFXuBbw": "\"8\"",
+        "r1fp8uSWP": "1"
+      },
+      "id": "H1PFbFBZw",
+      "position": {
+        "units": "slots",
+        "x": 8,
+        "y": 2
+      },
+      "type": "@/display-text"
+    },
+    {
+      "id": "HJI3GFSWw",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 7
+      },
+      "type": "@/clear"
+    },
+    {
+      "boundLiterals": {
+        "H1tdHs5Ww": "D255",
+        "r1QuSjqbv": "D255",
+        "rJmFZ_Bbw": "8",
+        "ryTwBicbw": "D8"
+      },
+      "id": "Hk1KbKHWv",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 1
+      },
+      "type": "@/segm8-device"
+    },
+    {
+      "id": "S1EaMYrWD",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 7
+      },
+      "type": "xod/core/defer(pulse)"
+    },
+    {
+      "boundLiterals": {
+        "S1NKLdrWv": "128d"
+      },
+      "id": "SJCiftBWv",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 5
+      },
+      "type": "@/write-segments"
+    },
+    {
+      "boundLiterals": {
+        "Skre8ROSv1-": "1"
+      },
+      "id": "ryI0GYHbv",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 6
+      },
+      "type": "xod/core/delay"
+    },
+    {
+      "boundLiterals": {
+        "ryv7IRdSP1b": "On Boot"
+      },
+      "id": "ryVlfYH-w",
+      "position": {
+        "units": "slots",
+        "x": 12,
+        "y": 1
+      },
+      "type": "xod/core/any"
+    }
+  ]
+}

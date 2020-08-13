@@ -1,0 +1,78 @@
+{
+  "description": "Creates a SegM8 object. If D0 or CLK are D255, hardware SPI is used. Other D0 and CLK values are ​​used for software SPI.",
+  "nodes": [
+    {
+      "id": "BkHHWOrZv",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "D255"
+      },
+      "description": "The CLK is the Arduino pin through which the clock signals are transmitted with software SPI. You can use any pin of the Arduino. For example: 'D4'.\nLeave this parameter at 'D255' when using hardware SPI.",
+      "id": "H1tdHs5Ww",
+      "label": "CLK",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-port"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "1"
+      },
+      "description": "The number of modules in the daisy-chain. The default is 1.",
+      "id": "Hyxj-dBZD",
+      "label": "CNT",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "SegM8 device.",
+      "id": "SkOn-_SZv",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-self"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "D255"
+      },
+      "description": "The DO is an Arduino pin through which data is transmitted with software SPI. You can use any pin of the Arduino. For example: 'D3'.\nLeave this parameter at 'D255' when using hardware SPI.",
+      "id": "r1QuSjqbv",
+      "label": "DO",
+      "position": {
+        "units": "slots",
+        "x": 7,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-port"
+    },
+    {
+      "description": "The CS is a signal that controls the display of the value transferred to the SegM8. You can use any Arduino pin. For example: 'D8'.",
+      "id": "ryTwBicbw",
+      "label": "CS",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-port"
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "description": "Displays a number at the specified POS position with a width of WDTH.",
+  "nodes": [
+    {
+      "description": "The number to display.",
+      "id": "B1E6ms9-w",
+      "label": "NUM",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "id": "BkAYfocWw",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "Pad zeros flag.",
+      "id": "BkE74ocbD",
+      "label": "LEAD0",
+      "position": {
+        "units": "slots",
+        "x": 13,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/input-boolean"
+    },
+    {
+      "id": "BkwL4iqbv",
+      "label": "DO",
+      "position": {
+        "units": "slots",
+        "x": 17,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "description": "Link to segm8 object.",
+      "id": "H1Yqfiq-v",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 1
+      },
+      "type": "@/input-segm8-device"
+    },
+    {
+      "id": "HJxDNo9ZP",
+      "label": "DONE",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "id": "Hy6Yss9bv",
+      "label": "DEV'",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 3
+      },
+      "type": "@/output-segm8-device"
+    },
+    {
+      "description": "The number of digits after the decimal point. If 0 the decimal point is not displayed.",
+      "id": "Hyo0y3cWv",
+      "label": "PREC",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "Displayed number start position.",
+      "id": "SyLyEo5-v",
+      "label": "POS",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "10"
+      },
+      "description": "Radix for unsigned integers. 10 and 16 are supported.",
+      "id": "r11fVj9ZP",
+      "label": "RDX",
+      "position": {
+        "units": "slots",
+        "x": 11,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "Arrange to left flag. If false arranges to right.",
+      "id": "r1uHNs5bv",
+      "label": "LEFT",
+      "position": {
+        "units": "slots",
+        "x": 15,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/input-boolean"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "1"
+      },
+      "description": "Displayed number width. The dot symbol - '.'  does not occupy a separate position.",
+      "id": "rymeVjcZv",
+      "label": "WDTH",
+      "position": {
+        "units": "slots",
+        "x": 7,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/input-number"
+    }
+  ]
+}

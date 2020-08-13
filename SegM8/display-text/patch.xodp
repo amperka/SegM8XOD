@@ -1,0 +1,88 @@
+{
+  "description": "Displays a text starting at the specified POS position with a width of WDTH. Supported alphabet: \"0123456789AbCdEFGHIJLOPqrStUY\". Supported symbols are SPACE, DOT, MINUS, DOUBLE QUOTE, QUOTE, COMMA, EQUAL, LEFT and RIGHT BRACKETS (']['), UNDERSCORE, DEGREE on '^'. Instead of unsupported characters, an overline is displayed.",
+  "nodes": [
+    {
+      "description": "Displayed text start position.",
+      "id": "B1k6UuSWv",
+      "label": "POS",
+      "position": {
+        "units": "slots",
+        "x": 7,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "id": "BJ-Oojqbw",
+      "label": "DEV'",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 3
+      },
+      "type": "@/output-segm8-device"
+    },
+    {
+      "id": "BJkIXOrbw",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "Text to be displayed on the daisy-chain of indicator modules.",
+      "id": "ByyFXuBbw",
+      "label": "TEXT",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/input-string"
+    },
+    {
+      "id": "SJbqmuSZw",
+      "label": "DO",
+      "position": {
+        "units": "slots",
+        "x": 11,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "id": "Sk29QOS-w",
+      "label": "DONE",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "Displayed text width. The dot symbol - '.'  does not occupy a separate position.",
+      "id": "r1fp8uSWP",
+      "label": "WDTH",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "Link to segm8 object.",
+      "id": "ryzPmdrbD",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 1
+      },
+      "type": "@/input-segm8-device"
+    }
+  ]
+}
