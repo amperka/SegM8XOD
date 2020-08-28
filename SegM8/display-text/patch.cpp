@@ -16,6 +16,7 @@ void evaluate(Context ctx) {
     if(isInputDirty<input_DO>(ctx)) {
         char* buf = new char(length(text)+1);
         dump(text, buf);
+        for(uint8_t i = 0; i < width; i++) chain->writeSegments( 0, position + i); // clear field, put spaces
         chain->display(buf, position, width, SEGM8_ALIGN_LEFT);
         delete buf;
         emitValue<output_DONE>(ctx, true);
