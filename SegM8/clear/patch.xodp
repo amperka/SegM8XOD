@@ -1,7 +1,8 @@
 {
-  "description": "Writes the white spaces to all indicator modules (switches them off).",
+  "description": "Clears all the SegM8 modules, i.e., turns off all their segments.",
   "nodes": [
     {
+      "description": "Triggers a new clear.",
       "id": "BJkYMOrbv",
       "label": "DO",
       "position": {
@@ -21,6 +22,7 @@
       "type": "xod/patch-nodes/not-implemented-in-xod"
     },
     {
+      "description": "Pulses when the clear is done.",
       "id": "SkR9zuBWw",
       "label": "DONE",
       "position": {
@@ -31,7 +33,7 @@
       "type": "xod/patch-nodes/output-pulse"
     },
     {
-      "description": "Link to segm8 object.",
+      "description": "The SegM8 device.",
       "id": "SyDvz_HZw",
       "label": "DEV",
       "position": {
@@ -42,6 +44,7 @@
       "type": "@/input-segm8-device"
     },
     {
+      "description": "The SegM8 device.",
       "id": "rkdrci9Ww",
       "label": "DEV'",
       "position": {

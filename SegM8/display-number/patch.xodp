@@ -1,10 +1,10 @@
 {
-  "description": "Displays a number at the specified POS position with a width of WDTH.",
+  "description": "Displays a number value at the SegM8 module or several modules linked in a daisy chain.",
   "nodes": [
     {
-      "description": "The number to display.",
+      "description": "A value to display.",
       "id": "B1E6ms9-w",
-      "label": "NUM",
+      "label": "VAL",
       "position": {
         "units": "slots",
         "x": 3,
@@ -22,9 +22,9 @@
       "type": "xod/patch-nodes/not-implemented-in-xod"
     },
     {
-      "description": "Pad zeros flag.",
+      "description": "The \"leading zeroes\" flag. If it is true adds zeroes to the beginning of the displayed value until it is W-sized.",
       "id": "BkE74ocbD",
-      "label": "LEAD0",
+      "label": "LZ",
       "position": {
         "units": "slots",
         "x": 13,
@@ -33,6 +33,7 @@
       "type": "xod/patch-nodes/input-boolean"
     },
     {
+      "description": "Triggers a new display of the value.",
       "id": "BkwL4iqbv",
       "label": "DO",
       "position": {
@@ -43,7 +44,7 @@
       "type": "xod/patch-nodes/input-pulse"
     },
     {
-      "description": "Link to segm8 object.",
+      "description": "The SegM8 device.",
       "id": "H1Yqfiq-v",
       "label": "DEV",
       "position": {
@@ -54,6 +55,7 @@
       "type": "@/input-segm8-device"
     },
     {
+      "description": "Pulses when the display of the value is done.",
       "id": "HJxDNo9ZP",
       "label": "DONE",
       "position": {
@@ -64,6 +66,7 @@
       "type": "xod/patch-nodes/output-pulse"
     },
     {
+      "description": "The SegM8 device.",
       "id": "Hy6Yss9bv",
       "label": "DEV'",
       "position": {
@@ -74,9 +77,9 @@
       "type": "@/output-segm8-device"
     },
     {
-      "description": "The number of digits after the decimal point. If 0 the decimal point is not displayed.",
+      "description": "The number of SegM8 modules used to display digits after the dot. If it is set to 0, the value is displayed as an integer.",
       "id": "Hyo0y3cWv",
-      "label": "PREC",
+      "label": "DIG",
       "position": {
         "units": "slots",
         "x": 9,
@@ -85,7 +88,7 @@
       "type": "xod/patch-nodes/input-number"
     },
     {
-      "description": "Displayed number start position.",
+      "description": "In a daisy chain, the ordinal segM8 module number from which the value display begins. The module numbering in a daisy chain starts from 0, from left module to right.",
       "id": "SyLyEo5-v",
       "label": "POS",
       "position": {
@@ -99,7 +102,7 @@
       "boundLiterals": {
         "__out__": "10"
       },
-      "description": "Radix for unsigned integers. 10 and 16 are supported.",
+      "description": "The radix for an integer value. It can be 10 or 16. If the RDX is 16 the value is displayed in the hexadecimal format including the characters A, b, C, d, E, F;",
       "id": "r11fVj9ZP",
       "label": "RDX",
       "position": {
@@ -110,9 +113,9 @@
       "type": "xod/patch-nodes/input-number"
     },
     {
-      "description": "Arrange to left flag. If false arranges to right.",
+      "description": "The \"align\" flag. Aligns the displayed value to the left if true and to the right if false.",
       "id": "r1uHNs5bv",
-      "label": "LEFT",
+      "label": "A",
       "position": {
         "units": "slots",
         "x": 15,
@@ -124,9 +127,9 @@
       "boundLiterals": {
         "__out__": "1"
       },
-      "description": "Displayed number width. The dot symbol - '.'  does not occupy a separate position.",
+      "description": "The width of the displayed value in segM8 modules. The dot \".\" character of the floating-point value does not occupy the entire segM8 module.",
       "id": "rymeVjcZv",
-      "label": "WDTH",
+      "label": "W",
       "position": {
         "units": "slots",
         "x": 7,
