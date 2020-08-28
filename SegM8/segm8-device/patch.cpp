@@ -15,7 +15,7 @@ using Type = SegM8*;
 void evaluate(Context ctx) {
     State* state = getState(ctx);
     if(isSettingUp()) {
-        auto cnt = getValue<input_CNT>(ctx);
+        auto cnt = getValue<input_N>(ctx);
         auto cs = getValue<input_CS>(ctx);
         auto d0 = getValue<input_DO>(ctx);
         auto clk = getValue<input_CLK>(ctx);

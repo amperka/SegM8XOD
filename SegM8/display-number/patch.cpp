@@ -6,18 +6,19 @@ struct State {
 
 void evaluate(Context ctx) {
     auto chain = getValue<input_DEV>(ctx);
-    auto num = getValue<input_NUM>(ctx);
+    auto num = getValue<input_VAL>(ctx);
     auto position = getValue<input_POS>(ctx);
-    auto width = getValue<input_WDTH>(ctx);
-    auto precission = getValue<input_PREC>(ctx);
+    auto width = getValue<input_W>(ctx);
+    auto precission = getValue<input_DIG>(ctx);
     auto radix = getValue<input_RDX>(ctx);
-    auto leadzeros = getValue<input_LEAD0>(ctx);
-    auto toleft = getValue<input_LEFT>(ctx);
+    auto leadzeros = getValue<input_LZ>(ctx);
+    auto toleft = getValue<input_A>(ctx);
 
     if (isSettingUp())
         emitValue<output_DEVU0027>(ctx, chain);
 
     if(isInputDirty<input_DO>(ctx)) {
+        for(uint8_t i = 0; i < width; i++) chain->writeSegments( 0, position + i); // clear field, put spaces
         if(precission == 0) { // it is integer, not float
             if(radix == 10) {
                 chain->display((int32_t)num, position, width, (toleft ? SEGM8_ALIGN_LEFT : 0) | (leadzeros ? SEGM8_PAD_ZEROS : 0));

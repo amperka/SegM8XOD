@@ -8,7 +8,7 @@ void evaluate(Context ctx) {
     auto chain = getValue<input_DEV>(ctx);
     auto text = getValue<input_TEXT>(ctx);
     auto position = getValue<input_POS>(ctx);
-    auto width = getValue<input_WDTH>(ctx);
+    auto width = getValue<input_W>(ctx);
 
     if (isSettingUp())
         emitValue<output_DEVU0027>(ctx, chain);
