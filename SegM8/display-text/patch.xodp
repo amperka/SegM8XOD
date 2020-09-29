@@ -1,0 +1,91 @@
+{
+  "description": "A text string to display. The string should consist of next characters: \"0\", \"1\", \"2\", \"3\", \"4\", \"5\", \"6\", \"7\", \"8\", \"9\", \"A\", \"b\", \"C\", \"d\", \"E\", \"F\", \"G\", \"H\", \"I\", \"J\", \"L\", \"O\", \"P\", \"q\", \"r\", \"S\", \"t\", \"U\", \"Y\", space, dot , \"-\" , \"[\", \"]\", quote, double quote, underscore, degree. Instead of unsupported characters, the overline is displayed. The dot \".\" character does not occupy the entire segM8 module.",
+  "nodes": [
+    {
+      "description": "In a daisy chain, the ordinal SegM8 module number from which the text display begins. The module numbering in a daisy chain starts from 0, from left module to right.",
+      "id": "B1k6UuSWv",
+      "label": "POS",
+      "position": {
+        "units": "slots",
+        "x": 7,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "The SegM8 device.",
+      "id": "BJ-Oojqbw",
+      "label": "DEV'",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 3
+      },
+      "type": "@/output-segm8-device"
+    },
+    {
+      "id": "BJkIXOrbw",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "Text to be displayed on the daisy-chain of indicator modules.",
+      "id": "ByyFXuBbw",
+      "label": "TEXT",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/input-string"
+    },
+    {
+      "description": "Triggers a new display of the text.",
+      "id": "SJbqmuSZw",
+      "label": "DO",
+      "position": {
+        "units": "slots",
+        "x": 11,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "description": "Pulses when the display of the text is done.",
+      "id": "Sk29QOS-w",
+      "label": "DONE",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "The width of the displayed text in segM8 modules.",
+      "id": "r1fp8uSWP",
+      "label": "W",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "The SegM8 device.",
+      "id": "ryzPmdrbD",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 1
+      },
+      "type": "@/input-segm8-device"
+    }
+  ]
+}

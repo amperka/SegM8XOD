@@ -1,0 +1,58 @@
+{
+  "description": "Clears all the SegM8 modules, i.e., turns off all their segments.",
+  "nodes": [
+    {
+      "description": "Triggers a new clear.",
+      "id": "BJkYMOrbv",
+      "label": "DO",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "id": "BkU7MOrWP",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "Pulses when the clear is done.",
+      "id": "SkR9zuBWw",
+      "label": "DONE",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "The SegM8 device.",
+      "id": "SyDvz_HZw",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 1
+      },
+      "type": "@/input-segm8-device"
+    },
+    {
+      "description": "The SegM8 device.",
+      "id": "rkdrci9Ww",
+      "label": "DEV'",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 3
+      },
+      "type": "@/output-segm8-device"
+    }
+  ]
+}

@@ -1,0 +1,464 @@
+{
+  "comments": [
+    {
+      "content": "Time in seconds from program start.",
+      "id": "HJD4cYcWw",
+      "position": {
+        "units": "slots",
+        "x": 14,
+        "y": 1
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 3
+      }
+    },
+    {
+      "content": "Minutes",
+      "id": "HkXY9FqZw",
+      "position": {
+        "units": "slots",
+        "x": 8,
+        "y": 2
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      }
+    },
+    {
+      "content": "Point blinking",
+      "id": "HyiL6F9bv",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 2
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 3
+      }
+    },
+    {
+      "content": "Seconds",
+      "id": "rJiKqY5bw",
+      "position": {
+        "units": "slots",
+        "x": 14,
+        "y": 2
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      }
+    }
+  ],
+  "description": "The example simulates a clock is displaying minutes and seconds. The example uses 4 SegM8 modules. CS pin is connected to Arduino pin 8. Hardware SPI is used.",
+  "links": [
+    {
+      "id": "B12PyoA-w",
+      "input": {
+        "nodeId": "ryatno5Ww",
+        "pinKey": "B1E6ms9-w"
+      },
+      "output": {
+        "nodeId": "S1ZPyoCWP",
+        "pinKey": "S13xLCuHvkW"
+      }
+    },
+    {
+      "id": "Bkm_05C-w",
+      "input": {
+        "nodeId": "rkRDuK9Zv",
+        "pinKey": "ryKV8d_1f"
+      },
+      "output": {
+        "nodeId": "ByJuC5CZv",
+        "pinKey": "rkWeUCdBDkZ"
+      }
+    },
+    {
+      "id": "ByG86FqbP",
+      "input": {
+        "nodeId": "HycSaY9WP",
+        "pinKey": "ryTIROHwkW"
+      },
+      "output": {
+        "nodeId": "H167DKcZv",
+        "pinKey": "HJU8CE2lW"
+      }
+    },
+    {
+      "id": "ByWdR5AZw",
+      "input": {
+        "nodeId": "ByJuC5CZv",
+        "pinKey": "SklxICdHP1b"
+      },
+      "output": {
+        "nodeId": "BJI7_t9bD",
+        "pinKey": "BkqLCOSw1W"
+      }
+    },
+    {
+      "id": "ByvDyj0Zw",
+      "input": {
+        "nodeId": "S1ZPyoCWP",
+        "pinKey": "ryTeUROHD1b"
+      },
+      "output": {
+        "nodeId": "r1S-2qRbv",
+        "pinKey": "SyomIRurDJ-"
+      }
+    },
+    {
+      "id": "H1eK1oC-P",
+      "input": {
+        "nodeId": "HJdd1j0bw",
+        "pinKey": "S1yZIA_rDJZ"
+      },
+      "output": {
+        "nodeId": "HycSaY9WP",
+        "pinKey": "HkyxURuSPyW"
+      }
+    },
+    {
+      "id": "HJSDJsAZP",
+      "input": {
+        "nodeId": "S1ZPyoCWP",
+        "pinKey": "r1AgIROHDJW"
+      },
+      "output": {
+        "nodeId": "S1kLyoR-v",
+        "pinKey": "BkqLCOSw1W"
+      }
+    },
+    {
+      "id": "HkuJCcAbv",
+      "input": {
+        "nodeId": "BJ4ruYcZv",
+        "pinKey": "ryKV8d_1f"
+      },
+      "output": {
+        "nodeId": "Hku0a90-v",
+        "pinKey": "r1yhZRd8W"
+      }
+    },
+    {
+      "id": "HyeA2i5-P",
+      "input": {
+        "nodeId": "ryatno5Ww",
+        "pinKey": "BkwL4iqbv"
+      },
+      "output": {
+        "nodeId": "H167DKcZv",
+        "pinKey": "HJU8CE2lW"
+      }
+    },
+    {
+      "id": "Hysq2o9-D",
+      "input": {
+        "nodeId": "ryatno5Ww",
+        "pinKey": "H1Yqfiq-v"
+      },
+      "output": {
+        "nodeId": "HJiMtYcWv",
+        "pinKey": "SkOn-_SZv"
+      }
+    },
+    {
+      "id": "SJ750qAZP",
+      "input": {
+        "nodeId": "r1-cRq0-v",
+        "pinKey": "SklxICdHP1b"
+      },
+      "output": {
+        "nodeId": "BJ4ruYcZv",
+        "pinKey": "Hku_LuOyz"
+      }
+    },
+    {
+      "id": "SyHtkjAbv",
+      "input": {
+        "nodeId": "ryatno5Ww",
+        "pinKey": "Hyo0y3cWv"
+      },
+      "output": {
+        "nodeId": "HJdd1j0bw",
+        "pinKey": "S13xLCuHvkW"
+      }
+    },
+    {
+      "id": "SyP-h5CZw",
+      "input": {
+        "nodeId": "r1S-2qRbv",
+        "pinKey": "BJnQUR_BwyZ"
+      },
+      "output": {
+        "nodeId": "H1jknq0-D",
+        "pinKey": "BkQzLCurwJZ"
+      }
+    },
+    {
+      "id": "SyYiR50Zv",
+      "input": {
+        "nodeId": "H1jknq0-D",
+        "pinKey": "B1GfLR_SPk-"
+      },
+      "output": {
+        "nodeId": "rJrj0cRbw",
+        "pinKey": "rkWeUCdBDkZ"
+      }
+    },
+    {
+      "id": "r1joCcA-D",
+      "input": {
+        "nodeId": "rJrj0cRbw",
+        "pinKey": "SklxICdHP1b"
+      },
+      "output": {
+        "nodeId": "rkRDuK9Zv",
+        "pinKey": "Hku_LuOyz"
+      }
+    },
+    {
+      "id": "r1zF1sAbw",
+      "input": {
+        "nodeId": "S1ZPyoCWP",
+        "pinKey": "S1yZIA_rDJZ"
+      },
+      "output": {
+        "nodeId": "HycSaY9WP",
+        "pinKey": "HkyxURuSPyW"
+      }
+    },
+    {
+      "id": "rJN1RqRWD",
+      "input": {
+        "nodeId": "BJI7_t9bD",
+        "pinKey": "SkdIRuBD1b"
+      },
+      "output": {
+        "nodeId": "Hku0a90-v",
+        "pinKey": "r1yhZRd8W"
+      }
+    },
+    {
+      "id": "rkl8ki0Zv",
+      "input": {
+        "nodeId": "S1kLyoR-v",
+        "pinKey": "SkdIRuBD1b"
+      },
+      "output": {
+        "nodeId": "r1S-2qRbv",
+        "pinKey": "SyomIRurDJ-"
+      }
+    },
+    {
+      "id": "rku50qCWP",
+      "input": {
+        "nodeId": "r1S-2qRbv",
+        "pinKey": "HkqmLAOrD1W"
+      },
+      "output": {
+        "nodeId": "r1-cRq0-v",
+        "pinKey": "rkWeUCdBDkZ"
+      }
+    },
+    {
+      "id": "ry1yAqC-D",
+      "input": {
+        "nodeId": "Hku0a90-v",
+        "pinKey": "HJAq-A_8-"
+      },
+      "output": {
+        "nodeId": "H167DKcZv",
+        "pinKey": "HJU8CE2lW"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "boundLiterals": {
+        "BJvrLOuyz": "60"
+      },
+      "id": "BJ4ruYcZv",
+      "position": {
+        "units": "slots",
+        "x": 14,
+        "y": 3
+      },
+      "type": "xod/core/modulo"
+    },
+    {
+      "boundLiterals": {
+        "BytUCdHD1-": "60"
+      },
+      "id": "BJI7_t9bD",
+      "position": {
+        "units": "slots",
+        "x": 8,
+        "y": 3
+      },
+      "type": "xod/core/divide"
+    },
+    {
+      "id": "ByJuC5CZv",
+      "position": {
+        "units": "slots",
+        "x": 10,
+        "y": 3
+      },
+      "type": "xod/math/floor"
+    },
+    {
+      "boundLiterals": {
+        "B13SCNhl-": "1"
+      },
+      "id": "H167DKcZv",
+      "position": {
+        "units": "slots",
+        "x": 12,
+        "y": 0
+      },
+      "type": "xod/core/clock"
+    },
+    {
+      "boundLiterals": {
+        "SJ4zUC_BD1-": "100"
+      },
+      "id": "H1jknq0-D",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": 5
+      },
+      "type": "xod/core/multiply"
+    },
+    {
+      "boundLiterals": {
+        "r1AgIROHDJW": "2",
+        "ryTeUROHD1b": "0"
+      },
+      "id": "HJdd1j0bw",
+      "position": {
+        "units": "slots",
+        "x": 11,
+        "y": 8
+      },
+      "type": "xod/core/if-else"
+    },
+    {
+      "boundLiterals": {
+        "H1tdHs5Ww": "D255",
+        "Hyxj-dBZD": "4",
+        "r1QuSjqbv": "D255",
+        "rJmFZ_Bbw": "8",
+        "ryTwBicbw": "D8"
+      },
+      "id": "HJiMtYcWv",
+      "position": {
+        "units": "slots",
+        "x": 7,
+        "y": 0
+      },
+      "type": "@/segm8-device"
+    },
+    {
+      "id": "Hku0a90-v",
+      "position": {
+        "units": "slots",
+        "x": 11,
+        "y": 1
+      },
+      "type": "xod/core/count"
+    },
+    {
+      "id": "HycSaY9WP",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 3
+      },
+      "type": "xod/core/flip-flop"
+    },
+    {
+      "id": "S1ZPyoCWP",
+      "position": {
+        "units": "slots",
+        "x": 8,
+        "y": 8
+      },
+      "type": "xod/core/if-else"
+    },
+    {
+      "boundLiterals": {
+        "BytUCdHD1-": "100"
+      },
+      "id": "S1kLyoR-v",
+      "position": {
+        "units": "slots",
+        "x": 11,
+        "y": 7
+      },
+      "type": "xod/core/divide"
+    },
+    {
+      "id": "r1-cRq0-v",
+      "position": {
+        "units": "slots",
+        "x": 16,
+        "y": 3
+      },
+      "type": "xod/math/floor"
+    },
+    {
+      "id": "r1S-2qRbv",
+      "position": {
+        "units": "slots",
+        "x": 11,
+        "y": 6
+      },
+      "type": "xod/core/add"
+    },
+    {
+      "id": "rJrj0cRbw",
+      "position": {
+        "units": "slots",
+        "x": 10,
+        "y": 4
+      },
+      "type": "xod/math/floor"
+    },
+    {
+      "boundLiterals": {
+        "BJvrLOuyz": "24"
+      },
+      "id": "rkRDuK9Zv",
+      "position": {
+        "units": "slots",
+        "x": 8,
+        "y": 4
+      },
+      "type": "xod/core/modulo"
+    },
+    {
+      "boundLiterals": {
+        "BkE74ocbD": "True",
+        "Hyo0y3cWv": "0",
+        "r11fVj9ZP": "10",
+        "rymeVjcZv": "4"
+      },
+      "id": "ryatno5Ww",
+      "position": {
+        "units": "slots",
+        "x": 7,
+        "y": 9
+      },
+      "type": "@/display-number"
+    }
+  ]
+}
