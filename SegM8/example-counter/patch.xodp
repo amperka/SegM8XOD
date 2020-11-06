@@ -1,0 +1,77 @@
+{
+  "description": "Example of use quick-start-node segm8-number.",
+  "links": [
+    {
+      "id": "BJu_q_GKD",
+      "input": {
+        "nodeId": "r1LL5_MKP",
+        "pinKey": "H1mZcOftv"
+      },
+      "output": {
+        "nodeId": "H1xIU5OGKP",
+        "pinKey": "r1yhZRd8W"
+      }
+    },
+    {
+      "id": "r1lt9ufFw",
+      "input": {
+        "nodeId": "r1LL5_MKP",
+        "pinKey": "ryGQWcufYv"
+      },
+      "output": {
+        "nodeId": "SJWUIcdMKw",
+        "pinKey": "HJU8CE2lW"
+      }
+    },
+    {
+      "id": "rJQUIqdzYP",
+      "input": {
+        "nodeId": "H1xIU5OGKP",
+        "pinKey": "HJAq-A_8-"
+      },
+      "output": {
+        "nodeId": "SJWUIcdMKw",
+        "pinKey": "HJU8CE2lW"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "boundLiterals": {
+        "SkUjZA_L-": "On Boot"
+      },
+      "id": "H1xIU5OGKP",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 3
+      },
+      "type": "xod/core/count"
+    },
+    {
+      "boundLiterals": {
+        "BJJICN2lW": "On Boot"
+      },
+      "id": "SJWUIcdMKw",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 2
+      },
+      "type": "xod/core/clock"
+    },
+    {
+      "boundLiterals": {
+        "S1JYhqWYv": "1",
+        "SJWX-q_MYD": "1"
+      },
+      "id": "r1LL5_MKP",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 4
+      },
+      "type": "@/segm8-number"
+    }
+  ]
+}

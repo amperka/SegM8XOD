@@ -1,0 +1,188 @@
+{
+  "description": "Simple quick-start-node. Displays a number value at the SegM8 module or several modules linked in a daisy chain.",
+  "links": [
+    {
+      "id": "B1wQ-5dftw",
+      "input": {
+        "nodeId": "SJeXbcuGYw",
+        "pinKey": "H1Yqfiq-v"
+      },
+      "output": {
+        "nodeId": "HkLQbcuzYv",
+        "pinKey": "SkOn-_SZv"
+      }
+    },
+    {
+      "id": "BJtXbcuGKw",
+      "input": {
+        "nodeId": "HkLQbcuzYv",
+        "pinKey": "ryTwBicbw"
+      },
+      "output": {
+        "nodeId": "HJSmb9_MtP",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "H1dQZcdzKw",
+      "input": {
+        "nodeId": "HkLQbcuzYv",
+        "pinKey": "H1tdHs5Ww"
+      },
+      "output": {
+        "nodeId": "ryEQ-qdMtD",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "Hyp7-cuMYv",
+      "input": {
+        "nodeId": "HkLQbcuzYv",
+        "pinKey": "r1QuSjqbv"
+      },
+      "output": {
+        "nodeId": "HkXXZ9_zFw",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "SkC7-q_ztw",
+      "input": {
+        "nodeId": "SJeXbcuGYw",
+        "pinKey": "BkwL4iqbv"
+      },
+      "output": {
+        "nodeId": "ryGQWcufYv",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "SkjXZ9_MtP",
+      "input": {
+        "nodeId": "SJeXbcuGYw",
+        "pinKey": "rymeVjcZv"
+      },
+      "output": {
+        "nodeId": "SJWX-q_MYD",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "Syn7bquGtD",
+      "input": {
+        "nodeId": "SJeXbcuGYw",
+        "pinKey": "B1E6ms9-w"
+      },
+      "output": {
+        "nodeId": "H1mZcOftv",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "rkcXb5_zKw",
+      "input": {
+        "nodeId": "HkLQbcuzYv",
+        "pinKey": "Hyxj-dBZD"
+      },
+      "output": {
+        "nodeId": "SJWX-q_MYD",
+        "pinKey": "__out__"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "description": "A value to display.",
+      "id": "H1mZcOftv",
+      "label": "VAL",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "D8"
+      },
+      "description": "The CS is a signal that controls the display of the value transferred to the SegM8. You can use any Arduino pin. For example: 'D8'.",
+      "id": "HJSmb9_MtP",
+      "label": "CS",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/input-port"
+    },
+    {
+      "id": "HkLQbcuzYv",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 3
+      },
+      "type": "@/segm8-device"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "D255"
+      },
+      "description": "The DO is an Arduino pin through which data is transmitted with software SPI. You can use any pin of the Arduino. For example: 'D3'.\nLeave this parameter at 'D255' when using hardware SPI.",
+      "id": "HkXXZ9_zFw",
+      "label": "DO",
+      "position": {
+        "units": "slots",
+        "x": 7,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/input-port"
+    },
+    {
+      "description": "The number of modules in the daisy-chain. The default is 1.",
+      "id": "SJWX-q_MYD",
+      "label": "N",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "id": "SJeXbcuGYw",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 5
+      },
+      "type": "@/display-number"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "D255"
+      },
+      "description": "The CLK is the Arduino pin through which the clock signals are transmitted with software SPI. You can use any pin of the Arduino. For example: 'D4'.\nLeave this parameter at 'D255' when using hardware SPI.",
+      "id": "ryEQ-qdMtD",
+      "label": "CLK",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/input-port"
+    },
+    {
+      "description": "Triggers a new display of the value.",
+      "id": "ryGQWcufYv",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 11,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    }
+  ]
+}
