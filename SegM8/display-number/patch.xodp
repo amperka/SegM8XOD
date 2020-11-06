@@ -35,7 +35,7 @@
     {
       "description": "Triggers a new display of the value.",
       "id": "BkwL4iqbv",
-      "label": "DO",
+      "label": "UPD",
       "position": {
         "units": "slots",
         "x": 17,

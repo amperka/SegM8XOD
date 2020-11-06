@@ -46,7 +46,7 @@
     {
       "description": "Triggers a new display of the text.",
       "id": "SJbqmuSZw",
-      "label": "DO",
+      "label": "UPD",
       "position": {
         "units": "slots",
         "x": 11,
