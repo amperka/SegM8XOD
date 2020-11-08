@@ -46,13 +46,24 @@
       }
     },
     {
-      "id": "SkC7-q_ztw",
+      "id": "S1LTT4HYD",
       "input": {
         "nodeId": "SJeXbcuGYw",
         "pinKey": "BkwL4iqbv"
       },
       "output": {
-        "nodeId": "ryGQWcufYv",
+        "nodeId": "ByGaaNHYw",
+        "pinKey": "H1fx68wzB"
+      }
+    },
+    {
+      "id": "SJGeREHKw",
+      "input": {
+        "nodeId": "ByGaaNHYw",
+        "pinKey": "BytC28DfH"
+      },
+      "output": {
+        "nodeId": "H1mZcOftv",
         "pinKey": "__out__"
       }
     },
@@ -64,6 +75,17 @@
       },
       "output": {
         "nodeId": "SJWX-q_MYD",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "SykeCVBtv",
+      "input": {
+        "nodeId": "ByGaaNHYw",
+        "pinKey": "H13R3IvGB"
+      },
+      "output": {
+        "nodeId": "HJEyCVHKv",
         "pinKey": "__out__"
       }
     },
@@ -92,6 +114,15 @@
   ],
   "nodes": [
     {
+      "id": "ByGaaNHYw",
+      "position": {
+        "units": "slots",
+        "x": 10,
+        "y": 3
+      },
+      "type": "xod/core/act"
+    },
+    {
       "description": "A value to display.",
       "id": "H1mZcOftv",
       "label": "VAL",
@@ -101,6 +132,20 @@
         "y": 1
       },
       "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "True"
+      },
+      "description": "Allows or forbids value changes.",
+      "id": "HJEyCVHKv",
+      "label": "ACT",
+      "position": {
+        "units": "slots",
+        "x": 11,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/input-boolean"
     },
     {
       "boundLiterals": {
@@ -172,17 +217,6 @@
         "y": 1
       },
       "type": "xod/patch-nodes/input-port"
-    },
-    {
-      "description": "Triggers a new display of the value.",
-      "id": "ryGQWcufYv",
-      "label": "UPD",
-      "position": {
-        "units": "slots",
-        "x": 11,
-        "y": 1
-      },
-      "type": "xod/patch-nodes/input-pulse"
     }
   ]
 }

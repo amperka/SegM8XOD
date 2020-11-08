@@ -13,17 +13,6 @@
       }
     },
     {
-      "id": "r1lt9ufFw",
-      "input": {
-        "nodeId": "r1LL5_MKP",
-        "pinKey": "ryGQWcufYv"
-      },
-      "output": {
-        "nodeId": "SJWUIcdMKw",
-        "pinKey": "HJU8CE2lW"
-      }
-    },
-    {
       "id": "rJQUIqdzYP",
       "input": {
         "nodeId": "H1xIU5OGKP",
@@ -43,7 +32,7 @@
       "id": "H1xIU5OGKP",
       "position": {
         "units": "slots",
-        "x": 3,
+        "x": 4,
         "y": 3
       },
       "type": "xod/core/count"
@@ -68,7 +57,7 @@
       "id": "r1LL5_MKP",
       "position": {
         "units": "slots",
-        "x": 3,
+        "x": 4,
         "y": 4
       },
       "type": "@/segm8-number"
