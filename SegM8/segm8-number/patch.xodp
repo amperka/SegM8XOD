@@ -1,5 +1,5 @@
 {
-  "description": "Simple quick-start-node. Displays a number value at the SegM8 module or several modules linked in a daisy chain.",
+  "description": "Displays a number value on a SegM8 module or several modules linked in a daisy chain.",
   "links": [
     {
       "id": "B1wQ-5dftw",
