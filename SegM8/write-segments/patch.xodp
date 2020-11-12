@@ -48,7 +48,7 @@
     {
       "description": "Triggers a new segment lighting",
       "id": "rk2PLOr-D",
-      "label": "DO",
+      "label": "UPD",
       "position": {
         "units": "slots",
         "x": 10,

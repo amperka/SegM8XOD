@@ -4,7 +4,7 @@
     {
       "description": "Triggers a new clear.",
       "id": "BJkYMOrbv",
-      "label": "DO",
+      "label": "UPD",
       "position": {
         "units": "slots",
         "x": 5,

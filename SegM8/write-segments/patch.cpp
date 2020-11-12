@@ -12,7 +12,7 @@ void evaluate(Context ctx) {
     if (isSettingUp())
         emitValue<output_DEVU0027>(ctx, chain);
 
-    if(isInputDirty<input_DO>(ctx)) {
+    if(isInputDirty<input_UPD>(ctx)) {
         chain->writeSegments(mask, position);
         emitValue<output_DONE>(ctx, true);
     }

@@ -13,7 +13,7 @@ void evaluate(Context ctx) {
     if (isSettingUp())
         emitValue<output_DEVU0027>(ctx, chain);
 
-    if(isInputDirty<input_DO>(ctx)) {
+    if(isInputDirty<input_UPD>(ctx)) {
         char* buf = new char(length(text)+1);
         dump(text, buf);
         for(uint8_t i = 0; i < width; i++) chain->writeSegments( 0, position + i); // clear field, put spaces
