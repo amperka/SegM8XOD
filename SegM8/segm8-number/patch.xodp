@@ -151,7 +151,7 @@
       "boundLiterals": {
         "__out__": "D8"
       },
-      "description": "The CS is a signal that controls the display of the value transferred to the SegM8. You can use any Arduino pin. For example: 'D8'.",
+      "description": "The board port to which the CS pin of SegM8 is connected. You may use any Arduino pin. For example: 'D8'.",
       "id": "HJSmb9_MtP",
       "label": "CS",
       "position": {
