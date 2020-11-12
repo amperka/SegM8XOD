@@ -174,7 +174,7 @@
       "boundLiterals": {
         "__out__": "D255"
       },
-      "description": "The DO is an Arduino pin through which data is transmitted with software SPI. You can use any pin of the Arduino. For example: 'D3'.\nLeave this parameter at 'D255' when using hardware SPI.",
+      "description": "The board port to which the DO pin of SegM8 is connected. You may use any Arduino pin. For example: 'D3'.\nLeave this parameter at 'D255' when using hardware SPI.",
       "id": "HkXXZ9_zFw",
       "label": "DO",
       "position": {
