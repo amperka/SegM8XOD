@@ -185,7 +185,7 @@
       "type": "xod/patch-nodes/input-port"
     },
     {
-      "description": "The number of modules in the daisy-chain. The default is 1.",
+      "description": "The number of modules in the daisy-chain.",
       "id": "SJWX-q_MYD",
       "label": "N",
       "position": {
